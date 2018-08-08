@@ -21,5 +21,5 @@ RUN curl -LO https://github.com/bazelbuild/bazel/releases/download/${version}/ba
     chmod +x bazel-${version}-installer-linux-x86_64.sh && \
     ./bazel-${version}-installer-linux-x86_64.sh --user && \
     rm  -f ./bazel-${version}-installer-linux-x86_64.sh
-ENV PATH $PATH:$HOME/bin
+ENV PATH $PATH:/root/bin
 
